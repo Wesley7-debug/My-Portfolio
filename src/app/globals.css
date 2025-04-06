@@ -1,24 +1,103 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+@font-face {
+  font-family:" Gothic";
+  src: url("/fonts/gothic_ultra_ot.otf") format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Oldstandard";
+  src: url("/fonts/OldStandardTTRegular.ttf") format('truetype');
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family:"Lora";
+  src: url("/fonts/LoraRegular.ttf") format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family:"UnifrakturCook";
+  src: url("/fonts/UnifrakturCookBold.ttf") format('truetype');
+  font-weight: 700;
+  font-display: swap;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+@theme{
+
+  --font-gothic : "Gothic" serif;
+  --font-uniFract:"UnifrakturCook", cursive;
+  --font-oldstandard :"Oldstandard" san-serif;
+  --font-lora:"Lora", serif;
+  --color-navlink:#efece7;
+  --color-tip:#66666;
+  --color-texts:#44444;
+  --color-border:#5c5c5c;
+  --color-nav:#1c1c1c;
+  --color-bg:#e0c9ae;
+  --color-middleline:#b5895a;
+
 }
+
+body{
+  overflow-x: hidden;
+  background-color:#e0c9ae ;
+}
+
+h1{
+  font-family: "Gothic" ;
+}
+p{
+  font-family: "lora";
+
+}
+h2{
+  font-family: "Oldstandard";
+
+}
+
+ol,
+ul{
+  font-family: "lora";
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height:130%;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+
+
+
+::view-transition-old(root),
+::view-transition-new(root) {
+animation: none !important;
+}
+ ::view-transition-group(root){
+  z-index: auto !important;
+ }
+ ::view-transition-image-pair(root){
+  isolation: isolate;
+  will-change: transform clip-path;
+  z-index: 1;
+ }
+ ::view-transition-new(root){
+  z-index: 1000;
+  animation: none !important;
+ }
+ ::view-transition-old(root){
+  z-index: 1;
+  animation: none !important;
+ }
