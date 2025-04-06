@@ -1,11 +1,10 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Bentoui1 from "./BentoUi/Bentoui1";
 import Bentoui2 from "./BentoUi/BentoUi2";
 import BentoUi3 from "./BentoUi/BentoUi3";
 import BentoUi4 from "./BentoUi/BentoUi4";
 import SplitType from "split-type";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const MainAbout = () => {
 const [isWeek, setisWeek] = useState(true)
@@ -13,7 +12,7 @@ const [isWeek, setisWeek] = useState(true)
 const toggleWeek = () =>{setisWeek(!isWeek)}
 
 
-useGSAP(()=>{
+useEffect(() => {
     gsap.set(".imgS",{clipPath: "polygon(100% 0% , 100% 0%, 100% 100%, 100% 100%)"})
     const sRittxt = new SplitType ('.aboutparA',{
         types: "chars,lines,words"
@@ -34,7 +33,12 @@ useGSAP(()=>{
         delay:0.025,
         ease:"power2.inOut",
     })
-})
+
+  
+}, [])
+
+
+
 
   return (
 <section className="w-screen h-auto overflow-hidden relative bg-bg bg-[url(/bg-texture.webp)] ">

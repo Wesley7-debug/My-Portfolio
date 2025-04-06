@@ -1,6 +1,7 @@
 "use client";
 
-import TransitionLink from "@/Libs/TransitionLink";
+import Link from "next/link";
+
 
 
 const SmallAbout = () => {
@@ -67,9 +68,8 @@ const SmallAbout = () => {
   border rounded-[50%] cursor-pointer inline-block"> 
  <h1 className="p-7  font-bold"> 
   <span>
-<TransitionLink 
-child={"ABOUT ME"}
-href={"/Sleek/MainAbout"}/>
+
+<Link href='/Sleek/MainAbout'>ABOUT ME</Link>
 
   </span>
 
