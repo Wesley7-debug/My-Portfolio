@@ -47,7 +47,7 @@
 
 body{
   overflow-x: hidden;
-  background-color:#e0c9ae ;
+height: 100%;
 }
 
 h1{
@@ -78,26 +78,3 @@ ul{
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 
-
-
-
-::view-transition-old(root),
-::view-transition-new(root) {
-animation: none !important;
-}
- ::view-transition-group(root){
-  z-index: auto !important;
- }
- ::view-transition-image-pair(root){
-  isolation: isolate;
-  will-change: transform clip-path;
-  z-index: 1;
- }
- ::view-transition-new(root){
-  z-index: 1000;
-  animation: none !important;
- }
- ::view-transition-old(root){
-  z-index: 1;
-  animation: none !important;
- }

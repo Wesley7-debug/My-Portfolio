@@ -91,12 +91,12 @@ className="w-screen h-auto overflow-y-hidden bg-[url(/bg-texture.webp)] text-cen
 
     <div className=" arrested w-full lg:w-1/2  border-r border-border" >
         <div className="py-3 px-4 flex flex-col justify-center items-center  ">
-<div className="text-6xl font-bold md:text-center lg:text-8xl  p-2">
+<div className="text-6xl font-extrabold md:text-center lg:text-8xl  p-2">
     <h1
  
     >BREAKING NEWS</h1>
 </div>
-<div className="text-[2.1rem] lg:text-6xl P-4 font-semibold ">
+<div className="text-[2.1rem] lg:text-6xl P-4 font-bold ">
     <h2>THE CRAZY CREATIVE DEVELOPER FINALLY CAUGHT !</h2>
 </div>
 <div  className=" text-2xl lg:text-5xl p-3 lg:p-5 w-full ">

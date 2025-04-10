@@ -31,7 +31,21 @@ const ctx = gsap.context (() =>{
     ref={marqueeRef}
     className=" marquee text-5xl font-bold lg:text-8xl">Let's work together 
     <span className="text-bg bg-black inline-block cursor-pointer ">
-      <a href="mailto:eugenefidelis573@gmail.com"></a>EMAIL ME</span>*</h1>
+      <a href="mailto:eugenefidelis573@gmail.com" target="_"></a>EMAIL ME</span>*</h1>
+    </div>
+    <div className="flex items-center shrink-0 px-1 cursor-pointer">
+    <h1
+    ref={marqueeRef}
+    className=" marquee text-5xl font-bold lg:text-8xl">Let's work together 
+    <span className="text-bg bg-black inline-block cursor-pointer ">
+      <a href="mailto:eugenefidelis573@gmail.com" target="_"></a>EMAIL ME</span>*</h1>
+    </div>
+    <div className="flex items-center shrink-0 px-1 cursor-pointer">
+    <h1
+    ref={marqueeRef}
+    className=" marquee text-5xl font-bold lg:text-8xl">Let's work together 
+    <span className="text-bg bg-black inline-block cursor-pointer ">
+      <a href="mailto:eugenefidelis573@gmail.com" target="_"></a>EMAIL ME</span>*</h1>
     </div>
     <div className="flex items-center shrink-0 px-1 cursor-pointer">
     <h1
@@ -45,35 +59,21 @@ const ctx = gsap.context (() =>{
     ref={marqueeRef}
     className=" marquee text-5xl font-bold lg:text-8xl">Let's work together 
     <span className="text-bg bg-black inline-block cursor-pointer ">
-      <a href="mailto:eugenefidelis573@gmail.com"></a>EMAIL ME</span>*</h1>
+      <a href="mailto:eugenefidelis573@gmail.com" target="_"></a>EMAIL ME</span>*</h1>
     </div>
     <div className="flex items-center shrink-0 px-1 cursor-pointer">
     <h1
     ref={marqueeRef}
     className=" marquee text-5xl font-bold lg:text-8xl">Let's work together 
     <span className="text-bg bg-black inline-block cursor-pointer ">
-      <a href="mailto:eugenefidelis573@gmail.com"></a>EMAIL ME</span>*</h1>
+      <a href="mailto:eugenefidelis573@gmail.com" target="_"></a>EMAIL ME</span>*</h1>
     </div>
     <div className="flex items-center shrink-0 px-1 cursor-pointer">
     <h1
     ref={marqueeRef}
     className=" marquee text-5xl font-bold lg:text-8xl">Let's work together 
     <span className="text-bg bg-black inline-block cursor-pointer ">
-      <a href="mailto:eugenefidelis573@gmail.com"></a>EMAIL ME</span>*</h1>
-    </div>
-    <div className="flex items-center shrink-0 px-1 cursor-pointer">
-    <h1
-    ref={marqueeRef}
-    className=" marquee text-5xl font-bold lg:text-8xl">Let's work together 
-    <span className="text-bg bg-black inline-block cursor-pointer ">
-      <a href="mailto:eugenefidelis573@gmail.com"></a>EMAIL ME</span>*</h1>
-    </div>
-    <div className="flex items-center shrink-0 px-1 cursor-pointer">
-    <h1
-    ref={marqueeRef}
-    className=" marquee text-5xl font-bold lg:text-8xl">Let's work together 
-    <span className="text-bg bg-black inline-block cursor-pointer ">
-      <a href="mailto:eugenefidelis573@gmail.com"></a>EMAIL ME</span>*</h1>
+      <a href="mailto:eugenefidelis573@gmail.com" target="_"></a>EMAIL ME</span>*</h1>
     </div>
   
    
